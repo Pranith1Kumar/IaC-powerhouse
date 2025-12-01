@@ -49,6 +49,50 @@ Terraform is one of the most widely used IaC tools. It enables you to:
 * Deploy cloud resources across providers (AWS, Azure, GCP, etc.)
 * Plan changes before applying using terraform plan
 * Manage infra state using terraform.tfstate
-* Ensure predictable deployments using modules and workspaces
+* Ensure predictable deployments using modules and workspaces.
 
 
+### Pulumi with IaC
+
+Pulumi is a modern IaC tool that allows you to define infrastructure using real programming languages such as Python, TypeScript, Go, C#, and Java.
+
+### *Why Pulumi?*
+
+* Use familiar programming languages instead of DSLs
+* Supports multi-cloud: AWS, Azure, GCP, Kubernetes, DigitalOcean, and more
+* Enables loops, conditionals, functions, and classes for advanced infra logic
+* Integration with CI/CD pipelines is straightforward
+* State can be stored in Pulumi Cloud, S3, Azure Blob, GCS, etc.
+
+Pulumi Registry: large ecosystem of official providers and reusable infrastructure templates
+### [↗ Click to explore more Pulumi Registry](https://www.pulumi.com/registry/)
+
+#### *Pulumi* supports a wide range of cloud providers—just like Terraform—and these providers are available through the Pulumi Registry. The Pulumi Registry is a large ecosystem that offers official cloud providers along with reusable infrastructure templates and components. It helps developers quickly integrate services, follow best practices, and build consistent, production-ready infrastructure using real programming languages.
+
+### *Pulumi Core Features*
+
+* Infrastructure defined using general-purpose languages
+* Real code reusability (functions, modules, packages)
+* Rich ecosystem of cloud providers via Pulumi Registry
+* Great for teams already using TypeScript/Python/Golang
+* Pulumi is ideal when you want IaC + full programming flexibility.
+
+### Ansible with IaC
+
+Ansible is an automation tool used for configuration management, application deployment, and provisioning using a simple YAML-based language.
+
+### *Why Ansible?*
+
+* Uses human-readable YAML playbooks
+* Agentless—requires only SSH or WinRM
+* Great for configuring servers, installing packages, managing users
+* Works with cloud providers (AWS, Azure, GCP) via Ansible modules
+* Ideal for post-provisioning setup after Terraform/Pulumi create resources
+
+### *Ansible Core Features*
+
+* Automates configuration and software setup
+* Ensures servers stay consistent with desired configuration
+* Uses roles, tasks, and inventories
+* Easy to integrate with Jenkins, GitHub Actions, and GitLab CI
+* Ansible is perfect for server configuration + orchestration, often used alongside Terraform or Pulumi.
