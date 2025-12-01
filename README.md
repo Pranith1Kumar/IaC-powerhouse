@@ -36,10 +36,26 @@ $$
 * Difficulty scaling and version-controlling changes
 * IaC solves this by turning infrastructure into automated, repeatable code.
 
+
+$$
+{\Huge
+\boldsymbol{
+\color{purple}{\text{Terraform}}
+}
+}
+$$
+
+
 ### Terraform with IaC
 
 #### Terraform automates the way infrastructure is defined and deployed across cloud environments. It supports a wide range of public cloud providers, including AWS, Azure, GCP, Kubernetes, and OCI.
 ### [↗ Click to explore more Terraform providers](https://registry.terraform.io/browse/providers)
+
+<!--
+Source - https://developer.hashicorp.com/terraform
+-->
+<a href="https://developer.hashicorp.com/terraform"><img src="https://github.com/user-attachments/assets/a0480ea3-3069-4b47-9b88-0e97f5ef3f7c"></img></a>
+
 
 ### *Terraform Core Tool for IaC*
 
@@ -52,9 +68,29 @@ Terraform is one of the most widely used IaC tools. It enables you to:
 * Ensure predictable deployments using modules and workspaces.
 
 
+$$
+{\Huge
+\boldsymbol{
+\color{yellow}{\text{P}}
+\color{yellow}{\text{u}}
+\color{salmon}{\text{l}}
+\color{salmon}{\text{u}}
+\color{purple}{\text{m}}
+\color{purple}{\text{i}}
+}
+}
+$$
+
 ### Pulumi with IaC
 
 Pulumi is a modern IaC tool that allows you to define infrastructure using real programming languages such as Python, TypeScript, Go, C#, and Java.
+
+<!--
+Source - https://www.pulumi.com/
+-->
+
+<a href="https://www.pulumi.com/"><img src="https://www.pulumi.com/logos/brand/logo-on-black.svg"></img></a>
+
 
 ### *Why Pulumi?*
 
@@ -77,9 +113,27 @@ Pulumi Registry: large ecosystem of official providers and reusable infrastructu
 * Great for teams already using TypeScript/Python/Golang
 * Pulumi is ideal when you want IaC + full programming flexibility.
 
+
+$$
+{\Huge
+\boldsymbol{
+\color{black}{\text{Ans}} 
+\color{white}{\text{i}} 
+\color{black}{\text{ble}} 
+}
+}
+$$
+
 ### Ansible with IaC
 
 Ansible is an automation tool used for configuration management, application deployment, and provisioning using a simple YAML-based language.
+
+<!--
+Source - https://docs.ansible.com/
+-->
+
+<a href="https://docs.ansible.com/"><img src="https://github.com/user-attachments/assets/a41fe249-ce14-4741-91f0-1bc13fc51e28/"></img></a>
+
 
 ### *Why Ansible?*
 
