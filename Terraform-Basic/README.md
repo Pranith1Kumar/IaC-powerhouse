@@ -28,6 +28,140 @@ Terraform is one of the most widely used IaC tools. It enables you to:
 
 <img width="1000" height="550" alt="image" src="https://github.com/user-attachments/assets/c1f1d927-aaa7-433b-835c-5ea84aaa71f2" >
 
+
+## **Installing & Setting Up Terraform**
+
+### **Install for any system**
+[https://developer.hashicorp.com/terraform/downloads](https://developer.hashicorp.com/terraform/downloads)
+
+### **Manual Installation Steps**
+
+### 1. Download Terraform ZIP:
+[https://developer.hashicorp.com/terraform/downloads](https://developer.hashicorp.com/terraform/downloads)
+2. Extract the ZIP.
+
+3. Move terraform.exe to:
+
+```bash
+C:\Windows\System32\
+```
+
+4. Verify installation:
+
+```bash
+terraform -version
+```
+
+## Initial Setup After Installation
+[Initial Setup After Installation](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/53184934e12a33b346c90b4a0112fd8ef7c352f3/Terraform-Basic/Initial%20Setup%20After%20Installation)
+
+To use Terraform, we need at least one provider from the Terraform Registry. For beginners, the easiest and most widely used provider is AWS.
+
+## AWS Terraform Provider:
+
+[https://registry.terraform.io/providers/hashicorp/aws/latest](https://registry.terraform.io/providers/hashicorp/aws/latest)
+
+### Setup AWS Account to use Terraform
+
+[https://aws.amazon.com/free/](https://aws.amazon.com/free/)
+
+
+### Create a Cloud Machine for Terraform Execution
+
+You can run Terraform from your local system, but using a cloud machine (VM) is cleaner, team-friendly, and works well for DevOps workflows.
+
+Below are the steps using AWS EC2 (beginner-friendly).
+
+1. Launch an EC2 Instance
+
+* Go to AWS Console → EC2 → Launch Instance
+* Name: terraform-exec-machine
+* AMI: Ubuntu 22.04 LTS
+* Instance type: t2.micro (Free Tier)
+* Key pair: Create/download a new one
+* Security group: Allow SSH (22) from My IP
+* Storage: Default (8GB) is enough
+* Launch the instance
+
+2. Connect to the Instance (SSH)
+
+On your laptop terminal:
+
+```bash
+ssh -i your-key.pem ubuntu@<EC2-Public-IP>
+```
+
+3. Update System Packages
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+4. Install Terraform [↗](https://developer.hashicorp.com/terraform/install)
+
+Copy the Ubuntu/Debain install command
+
+
+```bash
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+```
+
+Verify:
+
+```bash
+terraform -version
+```
+
+5. Install AWS CLI
+```bash
+sudo apt install awscli -y
+```
+
+Check:
+```bash
+aws --version
+```
+
+6. Configure AWS Credentials
+
+You need IAM user access keys.
+
+Run:
+```bash
+aws configure
+```
+
+Enter:
+
+* AWS Access Key
+* AWS Secret Key
+* Region (ap-south-1 for Hyderabad/Mumbai)
+* Output format (json)
+
+7. Create a Terraform Project Directory
+
+```bash
+mkdir terraform-project
+cd terraform-project
+touch main.tf
+```
+
+8. Initialize Terraform
+```bash
+terraform init
+```
+
+9. You are ready to run Terraform
+
+Now you can run:
+
+```bash
+terraform plan
+terraform apply
+terraform destroy
+```
+
 ## Terraform Commands (Power House Commands)
 
 1. $${\color{purple} terraform init }$$ – Initializes the working directory that contains your Terraform code.
