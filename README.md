@@ -129,6 +129,8 @@ Pulumi Registry: large ecosystem of official providers and reusable infrastructu
 
  ###  1. Pulumi Cloud Engineering Certification (Unofficial, Pulumi University Track)
 [https://www.pulumi.com/learn ↗](https://www.pulumi.com/learn)
+
+
 $$
 {\Huge
 \boldsymbol{
