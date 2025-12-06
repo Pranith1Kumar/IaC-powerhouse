@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" viewBox="0 0 120 28">
+  <!-- Badge background -->
+  <rect width="120" height="28" rx="6" fill="#f0f0f0"/>
+  
+  <!-- Text -->
+  <text x="10" y="18" font-size="16" font-family="Arial, sans-serif" font-weight="600" fill="#888888">
+    Archived
+  </text>
+</svg>
