@@ -66,8 +66,8 @@ What happens during initialization:
 
 After success, you’ll see:
 
-* .terraform/ directory created
-* .terraform.lock.hcl file generated
+* `.terraform/` directory created
+* `.terraform.lock.hcl` file generated
 
 
 4. Verify Provider Setup
