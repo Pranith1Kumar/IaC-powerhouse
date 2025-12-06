@@ -189,3 +189,12 @@ terraform destroy
 >  4. $${\color{purple} terraform destroy }$$ – This command reads the state file to identify all resources created during deployment and then deletes them. 
 * It removes the entire infrastructure managed by Terraform.
 * Use it carefully, as it is not reversible and will permanently destroy all tracked resources.
+
+
+# **Terraform Providers & Initialization**
+
+Terraform interacts with cloud providers, SaaS providers, and other APIs using plugins known as providers.
+
+Terraform configurations must specify which providers are required so that Terraform may install and utilize them.  In addition, some providers require setup (such as endpoint URLs or cloud regions) before they may be utilized.
+
+[Terraform Providers & Initialization](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/f6a92c0f3a7b818887f79a27eb9085ee179ed4da/Terraform-Basic/Terraform%20Providers%20%26%20Initialization)
