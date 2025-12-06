@@ -198,3 +198,82 @@ Terraform interacts with cloud providers, SaaS providers, and other APIs using p
 Terraform configurations must specify which providers are required so that Terraform may install and utilize them.  In addition, some providers require setup (such as endpoint URLs or cloud regions) before they may be utilized.
 
 [Terraform Providers & Initialization](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/936ed2b85c4e46004af795cdbd97af994a8d1b61/Terraform-Basic/Terraform%20Providers%20%26%20Initialization)
+
+
+## **What Providers Do**
+
+* Each provider defines a collection of `resource types` and/or `data sources` that Terraform may manage.
+* Terraform cannot manage any sort of infrastructure without providers, which implement each resource type.
+* Most suppliers set up a specialized infrastructure platform (cloud or self-hosted).
+* Providers can also provide local utilities for things such as generating random numbers for unique resource names.
+
+
+## **Private Providers**
+
+If you use a provider that is not included in a Hashicorp-hosted registry, you may need to provide extra credentials with your queries to external registries. These credentials are not required if your provider is in the Terraform public registry or the HCP Terraform private registry.
+
+By default, Terraform just authenticates the provider's first request to the registry.  The registry answers with follow-up URLs to which Terraform sends requests, such as instructing Terraform to obtain the provider or the SHASUMS file.  Follow-up queries to Hashicorp-hosted registries do not require extra authentication.
+
+
+## **How To Find Providers**
+
+Browse the [Terraform Registry's](https://registry.terraform.io/browse/providers) providers area to identify providers for your infrastructure platforms.
+
+- Some of the Registry's providers are created and released by HashiCorp, while others are provided by platform maintainers, users, and volunteers.  The badges shown below are used in the provider listings to denote who created and maintains a certain provider.
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Description</th>
+      <th>Namespace</th>
+    </tr>
+  </thead>
+  <tbody>
+     <!-- Official Row with Badge -->
+    <tr> 
+      <td>
+        <img src="assets/terraform-official-badge.svg" alt="Official Badge" height="24">
+      </td>
+      <td>Official providers are owned and maintained by HashiCorp</td>
+      <td>hashicorp, IBM, IBM-Cloud, ansible</td>
+    </tr>
+    <tr> 
+      <td>
+        <img src="assets/terraform-partner-premier-badge.svg" alt="Partner Premier Badge" height="24">
+      </td>
+      <td>Technology partners are third-party companies that write and maintain partner premier providers. To earn a partner premier badge, the partner must qualify (Refer to the partner premier requirements.)</td>
+      <td>Third-party organization</td>
+    </tr>
+    <tr> 
+      <td>
+        <img src="assets/terraform-partner-badge.svg" alt="Partner Badge" height="24">
+      </td>
+      <td>Partner providers are written, maintained, validated and published by third-party companies against their own APIs. To earn a partner provider badge the partner must participate in the HashiCorp Technology Partner Program</td>
+      <td>Third-party organization</td>
+    </tr>
+    <tr> 
+      <td>
+        <img src="assets/terraform-community-badge.svg" alt="Community Badge" height="24">
+      </td>
+      <td>Community providers are published to the Terraform Registry by individual maintainers, groups of maintainers, or other members of the Terraform community.</td>
+      <td>Maintainer’s individual or organization account, e.g. DeviaVir/gsuite</td>
+    </tr>
+    <tr> 
+      <td>
+        <img src="assets/terraform-archived-badge.svg" alt="Archived Badge" height="24">
+      </td>
+      <td>Archived Providers are Official or Partner Providers that are no longer maintained by HashiCorp or the community. This may occur if an API is deprecated or interest was low.</td>
+      <td>hashicorp or third-party</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+# **AWS Setup for Terraform**
+
+Before Terraform can create or manage AWS resources, we must set up AWS credentials and permissions.
+
+Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/b455f3903f57dd97b0e7a843a1ed107d2f6d3101/Terraform-Basic/AWS%20Setup%20for%20Terraform)
