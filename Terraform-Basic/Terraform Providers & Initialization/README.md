@@ -31,7 +31,7 @@ Want to learn more about providers?
 
 Create or open `main.tf` and add the provider configuration:
 
-[main.tf](file:///D:/IaC-powerhouse/Terraform-Basic/Terraform%20Providers%20&%20Initialization/main.tf)
+[main.tf](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/13e668f14b5bb70e5ff30e2bb1ae1b5dff3ae565/Terraform-Basic/Terraform%20Providers%20%26%20Initialization/main.tf)
 
 
 What does this do?
