@@ -112,7 +112,8 @@ terraform plan -out vm-plan.out
 ```
 ![Terraform console displaying the execution of terraform plan command with output file vm-plan.out, showing the planned infrastructure changes and resource creation details in a terminal window](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/fb191a877b436126adf9dd636b1156d0787a350c/Terraform-Basic/assets/save%20plan.png)
 
-This will create a file in your dir.
+This will create a file in your directory.
+
 2. Apply from the saved plan:
 
 ```bash
