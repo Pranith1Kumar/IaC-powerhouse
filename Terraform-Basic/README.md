@@ -276,7 +276,8 @@ Browse the [Terraform Registry's](https://registry.terraform.io/browse/providers
 
 Before Terraform can create or manage AWS resources, we must set up AWS credentials and permissions.
 
-Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/b455f3903f57dd97b0e7a843a1ed107d2f6d3101/Terraform-Basic/AWS%20Setup%20for%20Terraform)
+Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/5a3f96e15fd96e0d77af8d0e5f3d89bc6b36dffa/Terraform-Basic/TFinfra-tasks/TFinfra-3)
+
 
 
 # *Terraform Tasks*
