@@ -276,7 +276,7 @@ Browse the [Terraform Registry's](https://registry.terraform.io/browse/providers
 
 Before Terraform can create or manage AWS resources, we must set up AWS credentials and permissions.
 
-Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/5a3f96e15fd96e0d77af8d0e5f3d89bc6b36dffa/Terraform-Basic/TFinfra-tasks/TFinfra-3)
+Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/908ec9abd21a73ef7bacc425b3b759a3fa3038ff/Terraform-Basic/AWS%20Setup%20for%20Terraform)
 
 
 
@@ -284,4 +284,4 @@ Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerh
 
 1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/bf3aff5b4c3bbfdd3888a51e0542dcde28981cfc/Terraform-Basic/TFinfra-tasks/TFinfra-1)
 2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/50a128bd3f07d1865af8c3b0631b5c92711d80ae/Terraform-Basic/TFinfra-tasks/TFinfra-2)
-3. TFinfra -3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/bc588d1f78651c7e8013bba8900247b7d96774dd/Terraform-Basic/TFinfra-tasks/TFinfra-3)
+3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/908ec9abd21a73ef7bacc425b3b759a3fa3038ff/Terraform-Basic/TFinfra-tasks/TFinfra-3)
