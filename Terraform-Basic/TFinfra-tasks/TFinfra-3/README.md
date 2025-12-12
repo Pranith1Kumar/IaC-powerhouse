@@ -55,3 +55,12 @@ Instead of hardcoding AWS Access Key and Secret Key inside your provider.tf file
     terraform plan
     terraform apply
     ```
+
+
+$$
+{\Huge
+\boldsymbol{
+\color{purple}{\text{Hooray! You completed the third IaC Terraform task!}}
+}
+}
+$$

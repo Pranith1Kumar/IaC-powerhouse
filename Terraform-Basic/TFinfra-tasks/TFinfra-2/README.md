@@ -86,3 +86,12 @@ Type yes to confirm.
 
 * Terraform references the state file to safely delete the exact resources it created.
 * Always verify in the AWS Console that the instance is terminated.
+
+
+$$
+{\Huge
+\boldsymbol{
+\color{purple}{\text{Hooray! You completed the second IaC Terraform task!}}
+}
+}
+$$
