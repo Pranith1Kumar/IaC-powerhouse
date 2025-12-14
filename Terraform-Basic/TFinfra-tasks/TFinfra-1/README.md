@@ -16,7 +16,7 @@ You can use any folder for your Terraform project.
     * Log in to the AWS Management Console.
     * Navigate to IAM, Users, Your User, Security credentials.
     * Create an Access Key (for programmatic access).
-    * Download .`csv` / Note down:
+    * Download `.csv` / Note down:
         - AWS_ACCESS_KEY_ID
         - AWS_SECRET_ACCESS_KEY
 
@@ -26,9 +26,9 @@ You can use any folder for your Terraform project.
 
     On the machine where you run Terraform:
     
-        ```bash
-        aws configure
-        ```
+    ```bash
+    aws configure
+    ```
         
     Enter your access key, secret key, region (e.g. ap-south-1), and output format (json).
 
@@ -54,8 +54,8 @@ You can use any folder for your Terraform project.
 
     This downloads providers and prepares the working directory. This will initializes the working directory that contains your Terraform code.
 
-* During initialization, Terraform downloads the required providers, modules, and plugins.
-* It also sets up the backend where Terraform will store its state file.
+    * During initialization, Terraform downloads the required providers, modules, and plugins.
+    * It also sets up the backend where Terraform will store its state file.
 
 6. Terraform Plan to verify our requirements
 

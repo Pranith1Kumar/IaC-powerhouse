@@ -46,7 +46,7 @@ $$
 $$
 
 
-### Terraform with IaC
+### Terraform with IaC [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic)
 
 #### Terraform automates the way infrastructure is defined and deployed across cloud environments. It supports a wide range of public cloud providers, including AWS, Azure, GCP, Kubernetes, and OCI.
 ### [↗ Click to explore more Terraform providers](https://registry.terraform.io/browse/providers)

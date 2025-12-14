@@ -25,9 +25,8 @@ git branch
 
 Terraform uses these credentials to authenticate with AWS.
 
->[! NOTE]
+>[!NOTE]
 >Never hardcode credentials in provider.tf for real projects.
-
 >Use environment variables or IAM roles instead.
 
 ## 3. Terraform Configuration Files
@@ -41,14 +40,14 @@ For Creating an instance [use this createVM.tf file](https://github.com/Pranith1
 
 * First attempt without initialization will fail:
 
-```bash
-terraform plan
-```
+    ```bash
+    terraform plan
+    ```
 * Run initialization:
 
-```bash
-terraform init
-```
+    ```bash
+    terraform init
+    ```
 This will:
 
 * Download AWS provider from Terraform Registry
