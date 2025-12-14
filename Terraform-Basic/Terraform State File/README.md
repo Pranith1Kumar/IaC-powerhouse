@@ -43,7 +43,7 @@ Terraform State helps to:
 
    Use a basic Terraform configuration to create one EC2 instance.
 
-- Refer [TFinfra-1 Task to create a simple EC2 instance](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-1)
+- Refer [TFinfra-1 Task to create a simple EC2 instance](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-1)
 
 
     ```bash
@@ -65,7 +65,8 @@ Terraform State helps to:
     terraform.tfstate
     terraform.tfstate.backup
     ```
-    
+
+   ![State file created](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/assets/statefileVM.png)
     `terraform.tfstate.backup` appears when Terraform modifies an existing local state file during a successful `terraform apply`, and you should not share your `terraform.tfstate` and `terraform.tfstate.backup` with other it contains sensitive information like secrets and tokens.
 
     Open the state file:
@@ -81,7 +82,7 @@ Terraform State helps to:
     * Region
     * Metadata
 
-3. Modify the Infrastructure
+2. Modify the Infrastructure
 
    Update your code to change something simple, for example:
     * Instance type (t3.micro to t4g.micro)
@@ -99,7 +100,7 @@ Terraform State helps to:
     * Updated code (what you want)
 
 
-4. Apply the Changes
+3. Apply the Changes
 
     ```bash
     terraform apply
@@ -107,7 +108,7 @@ Terraform State helps to:
 
     Terraform updates the infrastructure and updates the state file automatically.
 
-5. Destroy and Observe State Update
+4. Destroy and Observe State Update
 
     ```bash
     terraform destroy

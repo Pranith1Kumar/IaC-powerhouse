@@ -36,21 +36,22 @@ Terraform is one of the most widely used IaC tools. It enables you to:
 
 ### **Manual Installation Steps**
 
-### 1. Download Terraform ZIP:
+1. Download Terraform ZIP:
 [https://developer.hashicorp.com/terraform/downloads](https://developer.hashicorp.com/terraform/downloads)
+
 2. Extract the ZIP.
 
 3. Move terraform.exe to:
 
-```bash
-C:\Windows\System32\
-```
+    ```bash
+    C:\Windows\System32\
+    ```
 
 4. Verify installation:
 
-```bash
-terraform -version
-```
+    ```bash
+    terraform -version
+    ```
 
 ## Initial Setup After Installation
 [Initial Setup After Installation](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/53184934e12a33b346c90b4a0112fd8ef7c352f3/Terraform-Basic/Initial%20Setup%20After%20Installation)
@@ -74,93 +75,95 @@ Below are the steps using AWS EC2 (beginner-friendly).
 
 1. Launch an EC2 Instance
 
-* Go to AWS Console → EC2 → Launch Instance
-* Name: terraform-exec-machine
-* AMI: Ubuntu 22.04 LTS
-* Instance type: t2.micro (Free Tier)
-* Key pair: Create/download a new one
-* Security group: Allow SSH (22) from My IP
-* Storage: Default (8GB) is enough
-* Launch the instance
+  * Go to AWS Console → EC2 → Launch Instance
+  * Name: terraform-exec-machine
+  * AMI: Ubuntu 22.04 LTS
+  * Instance type: t2.micro (Free Tier)
+  * Key pair: Create/download a new one
+  * Security group: Allow SSH (22) from My IP
+  * Storage: Default (8GB) is enough
+  * Launch the instance
 
 2. Connect to the Instance (SSH)
 
-On your laptop terminal:
-
-```bash
-ssh -i your-key.pem ubuntu@<EC2-Public-IP>
-```
+    On your laptop terminal:
+    
+    ```bash
+    ssh -i your-key.pem ubuntu@<EC2-Public-IP>
+    ```
 
 3. Update System Packages
-```bash
-sudo apt update && sudo apt upgrade -y
-```
+  
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
 
-4. Install Terraform [↗](https://developer.hashicorp.com/terraform/install)
+4. Install Terraform [**↗**](https://developer.hashicorp.com/terraform/install)
 
-Copy the Ubuntu/Debain install command
-
-
-```bash
-wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install terraform
-```
-
-Verify:
-
-```bash
-terraform -version
-```
+    Copy the Ubuntu/Debain install command
+    
+    ```bash
+    wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    sudo apt update && sudo apt install terraform
+    ```
+  
+    Verify:
+    
+    ```bash
+    terraform -version
+    ```
 
 5. Install AWS CLI
-```bash
-sudo apt install awscli -y
-```
 
-Check:
-```bash
-aws --version
-```
+    ```bash
+    sudo apt install awscli -y
+    ```
+  
+    Check:
+    ```bash
+    aws --version
+    ```
 
 6. Configure AWS Credentials
 
-You need IAM user access keys.
+    You need IAM user access keys.
+    
+    Run:
+    ```bash
+    aws configure
+    ```
 
-Run:
-```bash
-aws configure
-```
-
-Enter:
-
-* AWS Access Key
-* AWS Secret Key
-* Region (ap-south-1 for Hyderabad/Mumbai)
-* Output format (json)
+    Enter:
+    
+    * AWS Access Key
+    * AWS Secret Key
+    * Region (ap-south-1 for Hyderabad/Mumbai)
+    * Output format (json)
 
 7. Create a Terraform Project Directory
 
-```bash
-mkdir terraform-project
-cd terraform-project
-touch main.tf
-```
+    ```bash
+    mkdir terraform-project
+    cd terraform-project
+    touch main.tf
+    ```
 
 8. Initialize Terraform
-```bash
-terraform init
-```
+  
+    ```bash
+    terraform init
+    ```
 
 9. You are ready to run Terraform
 
-Now you can run:
+    Now you can run:
 
-```bash
-terraform plan
-terraform apply
-terraform destroy
-```
+    ```bash
+    terraform plan
+    terraform apply
+    terraform destroy
+    ```
 
 ## Terraform Commands (Power House Commands)
 
@@ -282,10 +285,10 @@ Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerh
 
 # *Terraform Tasks*
 
-1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-1)
-2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-2)
-3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/908ec9abd21a73ef7bacc425b3b759a3fa3038ff/Terraform-Basic/TFinfra-tasks/TFinfra-3)
-4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/81f4f3af505a0f76f614b70a544164b055c6f34b/Terraform-Basic/TFinfra-tasks/TFinfra-4)
+1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-1)
+2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-2)
+3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-3)
+4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-4)
 
 
 # *Terraform State* [↗](https://developer.hashicorp.com/terraform/language/state)
@@ -300,4 +303,4 @@ The state file also helps Terraform calculate deployment deltas, meaning it can 
 
 Because the state file is so important, it must be protected and managed carefully. Losing or corrupting the state file can lead to resource duplication, accidental deletions, or loss of control over existing infrastructure.
 
-Understand State File with Hands-on [↗]()
+Understand State File with Hands-on [**↗**]()
