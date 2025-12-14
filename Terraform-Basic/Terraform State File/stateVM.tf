@@ -3,7 +3,7 @@ provider "aws" {
     secret_key="SECRECT_ACCESS_KEY"
     region="ap-south-1"
 }
-resource "aws_instance" "firstvm" {
+resource "aws_instance" "stateVM" {
   ami           = "ami-0ade68f094cc81635"
   instance_type = "t3.micro"
 }

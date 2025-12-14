@@ -4,7 +4,8 @@ Sometimes we need more than one virtual machine for example, to build a small cl
 
 Instead of writing the same resource block three times, we tell Terraform how many copies we want, and it will automatically create them.
 
-Create 3 EC2 Instances Refer to `MultipleVM.tf` file for code.
+Create 3 EC2 Instances Refer to `MultipleVM.tf` file for code, you are already using `provider.tf` or env variables so no need to create a additional files to create the instances.
+
 
 What This Code Does (Simple Explanation)
 
