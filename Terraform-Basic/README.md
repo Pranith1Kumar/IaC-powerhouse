@@ -282,7 +282,22 @@ Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerh
 
 # *Terraform Tasks*
 
-1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/bf3aff5b4c3bbfdd3888a51e0542dcde28981cfc/Terraform-Basic/TFinfra-tasks/TFinfra-1)
-2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/50a128bd3f07d1865af8c3b0631b5c92711d80ae/Terraform-Basic/TFinfra-tasks/TFinfra-2)
+1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-1)
+2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-2)
 3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/908ec9abd21a73ef7bacc425b3b759a3fa3038ff/Terraform-Basic/TFinfra-tasks/TFinfra-3)
-4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2a060a6acf4eafd05ebec15686e0255868962557/Terraform-Basic/TFinfra-tasks/TFinfra-4)
+4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/81f4f3af505a0f76f614b70a544164b055c6f34b/Terraform-Basic/TFinfra-tasks/TFinfra-4)
+
+
+# *Terraform State* [↗](https://developer.hashicorp.com/terraform/language/state)
+
+Terraform State is a critical component that allows Terraform to understand what infrastructure already exists and what changes are required. It acts as the source of truth for all resources managed by Terraform.
+
+Terraform uses the state file to map real-world cloud resources to the resources defined in your Terraform configuration files. This mapping enables Terraform to track resource IDs, dependencies, and metadata accurately.
+
+Without the state file, Terraform cannot reliably determine whether a resource already exists, needs to be updated, or should be destroyed. As a result, infrastructure management would become error-prone and unpredictable.
+
+The state file also helps Terraform calculate deployment deltas, meaning it can identify the exact differences between the current infrastructure and the desired configuration. This is what makes `terraform plan` accurate and safe.
+
+Because the state file is so important, it must be protected and managed carefully. Losing or corrupting the state file can lead to resource duplication, accidental deletions, or loss of control over existing infrastructure.
+
+Understand State File with Hands-on [↗]()

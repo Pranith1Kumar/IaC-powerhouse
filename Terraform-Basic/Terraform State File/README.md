@@ -65,6 +65,8 @@ Terraform State helps to:
     terraform.tfstate
     terraform.tfstate.backup
     ```
+    
+    `terraform.tfstate.backup` appears when Terraform modifies an existing local state file during a successful `terraform apply`, and you should not share your `terraform.tfstate` and `terraform.tfstate.backup` with other it contains sensitive information like secrets and tokens.
 
     Open the state file:
 
