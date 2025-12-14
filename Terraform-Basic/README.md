@@ -303,4 +303,4 @@ The state file also helps Terraform calculate deployment deltas, meaning it can 
 
 Because the state file is so important, it must be protected and managed carefully. Losing or corrupting the state file can lead to resource duplication, accidental deletions, or loss of control over existing infrastructure.
 
-Understand State File with Hands-on [**↗**]()
+### Understand State File with Hands-on [**↗**](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/c5ddbbab9797a3c0ff9db962e43b5ddf67ed8b0f/Terraform-Basic/Terraform%20State%20File)
