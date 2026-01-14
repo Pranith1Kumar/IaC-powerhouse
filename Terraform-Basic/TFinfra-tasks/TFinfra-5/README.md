@@ -25,6 +25,9 @@ The environment is controlled only through variables, making the setup flexible,
   * `environment`: Specifies the target environment (dev or prod)
   * `instance_type_mapping`: Maps environment names to EC2 instance types.
 
+  ![TFinfra-I1](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I1.png)
+
+
 ## Step 2: Set Environment (`terraform.tfvars`)
 
  Define the active environment using a variable value.
@@ -82,11 +85,15 @@ The environment is controlled only through variables, making the setup flexible,
 
  Confirm when prompted.
 
+ ![TFinfra-I4](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I4.png)
+
 ## Step 8: Verify Deployment
 
  * Log in to AWS EC2 Console.
  * Verify instance creation.
  * Confirm instance type and tag name reflect the selected environment.
+
+ ![TFinfra-I5](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I5.png)
 
 ## Step 9: Switch Environment (No Code Change)
 
@@ -103,6 +110,8 @@ The environment is controlled only through variables, making the setup flexible,
   terraform apply
   ```
 
+  ![TFinfra-I2](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I2.png)
+
  Terraform detects the environment change and updates the infrastructure accordingly.
 
 
@@ -112,11 +121,26 @@ The environment is controlled only through variables, making the setup flexible,
 * `dev` = `t3.micro`
 * `prod` = `c7i-flex.large`
 
+![TFinfra-I3](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I3.png)
 No Terraform code changes required to switch environments.
 
 ## Conclusion
 
 This task demonstrates how Terraform variables and maps can be used to manage multiple environments efficiently, enabling scalable and maintainable infrastructure deployments.
+
+
+## **Destroy the Instance (Free-Tier Safety)**
+
+```bash
+terraform destroy
+```
+
+Type yes to confirm.
+
+* Terraform references the state file to safely delete the exact resources it created.
+* Always verify in the AWS Console that the instance is terminated.
+
+![Tfinfra-6](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/assets/TFinfra5-I6.png)
 
 $$
 {\Huge

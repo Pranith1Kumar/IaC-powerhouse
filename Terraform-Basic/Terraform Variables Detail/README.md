@@ -143,6 +143,8 @@ Let's Understand Terraform Variables using Hands-On Task
     Terraform updates resources and reflects changes automatically.
 
 
+Ready for a Mini Task on Terraform Variable [Click here ↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/1e952412b4057eddf1a01bc17dd944263b63fb4e/Terraform-Basic/TFinfra-tasks/TFinfra-5)
+
 $$
 {\Huge
 \boldsymbol{
