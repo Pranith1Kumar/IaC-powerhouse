@@ -306,7 +306,7 @@ Because the state file is so important, it must be protected and managed careful
 ### Understand State File with Hands-on [**↗**](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/c5ddbbab9797a3c0ff9db962e43b5ddf67ed8b0f/Terraform-Basic/Terraform%20State%20File)
 
 
-# *Terraform Variables* [↗]
+# *Terraform Variables* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/b4e508a8e307bf430a6f83ccd4fb042e88b4a469/Terraform-Basic/Terraform%20Variables%20Detail)
 
 Terraform provides variables to make infrastructure code flexible and reusable. Rather than hardcoding things directly in configuration like region, instance type and AMI ID, variables make it possible to define these values independently so that we can reuse the same code between different environments.
 
@@ -326,7 +326,5 @@ Altogether, Terraform variables contribute to writing cleaner, more secure and
 Introducing variables means you don’t have to put AWS tokens and other secret data into Git repos and it’s more secure, in line with best practice.
 
 * The value of a dynamic element such as AMI IDs, instance types, and regions can be handled using variables.
-* They allow making files more flexible, environment-independent (e.g. . env-based configurations).
-* When we use var. tf then we also will need to modify / update provider. tf to make proper reference to those variables.
-
-### Want to learn more about variables [**↗**]
+* They allow making files more flexible, environment-independent (e.g. `.env`-based configurations).
+* When we use `var.tf` then we also will need to modify / update `provider.tf` to make proper reference to those variables.

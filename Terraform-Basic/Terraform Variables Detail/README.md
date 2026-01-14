@@ -44,6 +44,42 @@ Terraform Variables help to:
 
 When using `variables.tf`, the `provider.tf` file needs to be able to reference variables instead of static values in order for it to be "dynamic".
 
+In this example, the AWS provider is configured using variables instead of hardcoded values. This approach makes the configuration more secure and flexible.
+
+* The `provider.tf` file references variables for AWS access key, secret key, and region.
+* These values are injected at runtime using Terraform variables.
+
+    ```hcl
+    provider "aws" {
+    access_key = var.AWS_ACCESS_KEY
+    secret_key = var.AWS_SECRET_ACCESS_KEY
+    region     = var.AWS_REGION
+    }
+    ```
+
+All required variables are declared in the `variables.tf` file to define their structure and expected values.
+
+* Sensitive variables such as AWS access keys are declared without default values.
+* The AWS region can have a default value to avoid repetition.
+
+    ```hcl
+    variable "AWS_ACCESS_KEY" {}
+    variable "AWS_SECRET_ACCESS_KEY" {}
+    variable "AWS_REGION" {
+    default = "ap-south-1"
+    }
+    ```
+
+The actual secret values are stored separately in a `terraform.tfvars` file.
+
+* This keeps sensitive information out of the main Terraform configuration files.
+* The `terraform.tfvars` file should not be committed to the Git repository.
+
+    ```hcl
+    AWS_ACCESS_KEY = "key"
+    AWS_SECRET_ACCESS_KEY = "secret_key"
+    AWS_REGION = "ap-south-1"
+    ```
 
 Let's Understand Terraform Variables using Hands-On Task
 
@@ -55,7 +91,6 @@ Let's Understand Terraform Variables using Hands-On Task
     variable "region" {
       description = "AWS region"
       type        = string
-      default     = "ap-south-1"
     }
     
     variable "instance_type" {
@@ -71,7 +106,7 @@ Let's Understand Terraform Variables using Hands-On Task
     
     ```hcl
     provider "aws" {
-      region = var.region
+      region = "ap-south-1"
     }
     ```
 
