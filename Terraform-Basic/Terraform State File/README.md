@@ -45,6 +45,8 @@ Terraform State helps to:
 
 - Refer [TFinfra-1 Task to create a simple EC2 instance](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-1)
 
+- For more state file tasks refer TFinfra-tasks Directory
+
 
     ```bash
     terraform init
