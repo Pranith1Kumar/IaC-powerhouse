@@ -288,7 +288,7 @@ Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerh
 1. TFinfra-1 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-1)
 2. TFinfra-2 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-2)
 3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-3)
-4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-4)
+4. TFinfra-4 [This task is related to state file](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-4)
 
 
 # *Terraform State* [↗](https://developer.hashicorp.com/terraform/language/state)
@@ -304,3 +304,29 @@ The state file also helps Terraform calculate deployment deltas, meaning it can 
 Because the state file is so important, it must be protected and managed carefully. Losing or corrupting the state file can lead to resource duplication, accidental deletions, or loss of control over existing infrastructure.
 
 ### Understand State File with Hands-on [**↗**](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/c5ddbbab9797a3c0ff9db962e43b5ddf67ed8b0f/Terraform-Basic/Terraform%20State%20File)
+
+
+# *Terraform Variables* [↗]
+
+Terraform provides variables to make infrastructure code flexible and reusable. Rather than hardcoding things directly in configuration like region, instance type and AMI ID, variables make it possible to define these values independently so that we can reuse the same code between different environments.
+
+Variables allow to prevent code duplication and modify the behavior of the infrastructure without modifying Terraform’s core file. This is particularly powerful if you want to apply the same configuration across dev, test and production.
+
+There are various types of variables you can use in a variable file, string, number, boolean just to name a few. Variables may specify default values, add descriptions and validations to enhance clarity and correctness.
+
+The value of a variable may be specified in several ways, such as:
+
+* Variable definition files (`.tfvars`)
+* Command line (`-var flag`)
+* Environment variables
+* Default values in variable blocks
+
+Altogether, Terraform variables contribute to writing cleaner, more secure and maintainable infrastructure code, which makes them one of the most important concepts in Infrastructure as Code.
+
+Introducing variables means you don’t have to put AWS tokens and other secret data into Git repos and it’s more secure, in line with best practice.
+
+* The value of a dynamic element such as AMI IDs, instance types, and regions can be handled using variables.
+* They allow making files more flexible, environment-independent (e.g. . env-based configurations).
+* When we use var. tf then we also will need to modify / update provider. tf to make proper reference to those variables.
+
+### Want to learn more about variables [**↗**]
