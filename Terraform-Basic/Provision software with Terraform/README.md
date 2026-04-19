@@ -52,7 +52,7 @@ Upload files/scripts from local machine to instance
 
 Run commands on the instance
 
-➤**`local-exec`** 
+➤`local-exec`
 
 Run commands on local machine
 
@@ -133,4 +133,4 @@ Terraform will:
 
 Click here for Task: 
 
-[*Provision software with terraform* ↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/6aa5e49bfaafdbee84b92deac66337fcb646d72b/Terraform-Basic/TFinfra-tasks/TFinfra-6)
+[*Provision software with terraform* ↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/5be56e3ce05a250f22fe6049d44cf64766ca524e/Terraform-Basic/TFinfra-tasks/TFinfra-6)
