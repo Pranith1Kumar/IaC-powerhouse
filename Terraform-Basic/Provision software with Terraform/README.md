@@ -19,6 +19,8 @@ Instead of manually logging into a server and installing packages, Terraform all
 1. Using Custom AMIs (Pre-Baked Images)
 2. Installing Software at Runtime
 
+
+
 1. **Using Custom AMIs (Pre-Baked Images)**
 
 In this approach, you create an image that already contains all required software.
@@ -34,23 +36,27 @@ In this approach, you create an image that already contains all required softwar
 - Consistent environments
 - Less runtime configuration
 
+
+
 2. **Installing Software at Runtime**
 
 In this approach, you launch a standard (base) AMI and install software after the instance starts.
 
 This can be done using:
 
-➤ File Provisioner
+➤ **File Provisioner**
 
 Upload files/scripts from local machine to instance
 
-➤ Remote-Exec Provisioner
+➤ **Remote-Exec Provisioner**
 
 Run commands on the instance
 
-➤local-exec → Run commands on local machine
+➤**`local-exec`** 
 
-➤ Configuration Management Tools
+Run commands on local machine
+
+➤ **Configuration Management Tools**
 
 **Chef** → Integrated with Terraform
 
@@ -124,3 +130,5 @@ Terraform will:
 - Use Terraform only for initial provisioning, not full configuration management
 
 **Let's do practical**
+
+Click here for Task: *Provision software with terraform* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/TFinfra-tasks/TFinfra-6)
