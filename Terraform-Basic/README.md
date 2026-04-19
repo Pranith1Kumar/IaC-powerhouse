@@ -307,7 +307,7 @@ Because the state file is so important, it must be protected and managed careful
 ### Understand State File with Hands-on [**↗**](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/c5ddbbab9797a3c0ff9db962e43b5ddf67ed8b0f/Terraform-Basic/Terraform%20State%20File)
 
 
-# *Terraform Variables* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/371c45b03c577713f87e518e33f2b58e1688f446/Terraform-Basic/Terraform%20Variables%20Detail)
+# *Terraform Variables* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/89800b5d61162b413867688296b21596fecea45e/Terraform-Basic/Terraform%20Variables%20Detail)
 
 Terraform provides variables to make infrastructure code flexible and reusable. Rather than hardcoding things directly in configuration like region, instance type and AMI ID, variables make it possible to define these values independently so that we can reuse the same code between different environments.
 
