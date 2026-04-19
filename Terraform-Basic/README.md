@@ -290,6 +290,7 @@ Click [here setup AWS for Terraform](https://github.com/Pranith1Kumar/IaC-powerh
 3. TFinfra-3 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-3)
 4. TFinfra-4 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/2e4aa7774d1ad19f9874fe7139f582bceda1ecae/Terraform-Basic/TFinfra-tasks/TFinfra-4)
 5. TFinfra-5 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/414c27dd55062a6a74a462f3b73fdb02e644d934/Terraform-Basic/TFinfra-tasks/TFinfra-5)
+6. TFinfra-6 [Check the task details here](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/5be56e3ce05a250f22fe6049d44cf64766ca524e/Terraform-Basic/TFinfra-tasks/TFinfra-6)
 
 
 # *Terraform State* [↗](https://developer.hashicorp.com/terraform/language/state)
@@ -329,3 +330,59 @@ Introducing variables means you don’t have to put AWS tokens and other secre
 * The value of a dynamic element such as AMI IDs, instance types, and regions can be handled using variables.
 * They allow making files more flexible, environment-independent (e.g. `.env`-based configurations).
 * When we use `var.tf` then we also will need to modify / update `provider.tf` to make proper reference to those variables.
+
+
+# *Provision Software with Terraform* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/5be56e3ce05a250f22fe6049d44cf64766ca524e/Terraform-Basic/Provision%20software%20with%20Terraform)
+
+Provisioning software with Terraform means not only creating infrastructure (like EC2 instances) but also installing and configuring software automatically on those resources.
+
+Instead of manually logging into a server and installing packages, Terraform allows you to automate this process using provisioners or user data scripts, making deployments faster, consistent, and repeatable.
+
+
+## Why Software Provisioning is Important
+- Automates software installation on infrastructure
+- Eliminates manual configuration steps
+- Ensures consistency across multiple machines
+- Saves time and reduces human errors
+- Helps in creating ready-to-use environments instantly
+
+### Ways to Provision Software in Terraform
+
+Terraform provides multiple ways to provision software:
+
+1️⃣ User Data (Recommended)
+- Runs scripts during instance launch
+- Best practice for most use cases
+- Works well with cloud-init (especially in AWS EC2)
+
+2️⃣ Provisioners
+
+- `remote-exec` → Run commands on the instance
+- `file` → Copy files to the instance
+- `local-exec` → Run commands on local machine
+
+⚠️ Provisioners are considered a last resort in Terraform. Prefer user data whenever possible.
+
+How Terraform Uses Provisioning
+
+Terraform will:
+
+- Create the EC2 instance
+- Run the script during launch
+- Install and start Nginx automatically
+- Make the server ready without manual login
+
+### Best Practices
+
+- Prefer user_data over provisioners
+- Keep scripts simple and idempotent
+- Avoid hardcoding sensitive data
+- Use configuration management tools (Ansible) for complex setups
+- Use Terraform only for initial provisioning, not full configuration management
+
+### Key Takeaways
+
+- Terraform can provision both infrastructure and software
+- Automation reduces manual work and errors
+- User data is the most efficient provisioning method
+- Provisioners should be used only when necessary
