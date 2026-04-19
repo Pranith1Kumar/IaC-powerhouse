@@ -131,4 +131,6 @@ Terraform will:
 
 **Let's do practical**
 
-Click here for Task: *Provision software with terraform* [↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/TFinfra-tasks/TFinfra-6)
+Click here for Task: 
+
+[*Provision software with terraform* ↗](https://github.com/Pranith1Kumar/IaC-powerhouse/tree/6aa5e49bfaafdbee84b92deac66337fcb646d72b/Terraform-Basic/TFinfra-tasks/TFinfra-6)
