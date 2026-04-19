@@ -6,9 +6,11 @@ Create an EC2 instance and automatically install Nginx web server using Terrafor
 
 ### Project Structure
 
+```
 .
 ├── main.tf
 ├── provider.tf
+```
 
 ### Step 1: Create Project Directory
 
@@ -100,6 +102,9 @@ resource "aws_instance" "nginx_server" {
 terraform init
 ```
 
+![TFinfra6-I1](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/assets/TFinfra6-I1.png)
+
+
 This downloads AWS provider and sets up environment.
 
 ### Step 7: Check Plan
@@ -132,6 +137,9 @@ Go to:
 
 Copy the Public IPv4 Address
 
+![TFinfra6-I2](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/assets/TFinfra6-I2.png)
+
+
 ### Step 10: Verify Nginx Installation
 
 Open browser and enter:
@@ -141,6 +149,8 @@ Open browser and enter:
 You should see:
 
 **Welcome to Nginx!**
+
+![TFinfra6-I3](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/assets/TFinfra6-I3.png)
 
 ### Step 11: Destroy Resources (Very Important)
 
@@ -154,8 +164,12 @@ Type:
 yes
 ```
 
+![TFinfra6-I4](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/assets/TFinfra6-I4.png)
+
+
 **This deletes EC2 and avoids AWS charges.**
 
+![TFinfra-I5](https://github.com/Pranith1Kumar/IaC-powerhouse/blob/43f707aa7791d3de1aba7bbd96b69519800e47c7/Terraform-Basic/assets/TFinfra6-I5.png)
 
 $$
 {\Huge
